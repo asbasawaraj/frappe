@@ -75,7 +75,7 @@
 * `bench console`   Opens a IPython console in the bench venv
 * `bench execute`   Execute a method inside any app.
   * Eg : `bench execute frappe.utils.scheduler.enqueue_scheduler_events`
-* `bench mysql`  Opens SQL Console 
+* `bench mariadb`  Opens SQL Console 
 * `bench run-tests`  Run tests
   * `--app` App Name
   * `--doctype` DocType to run tests for
