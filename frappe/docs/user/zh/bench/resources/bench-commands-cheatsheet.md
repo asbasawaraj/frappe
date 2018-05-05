@@ -17,8 +17,8 @@
   * `--restart-supervisor`  更新后重启 supervisor 进程
   * `--upgrade`             进行主版本升级 ( 如 ERPNext 6 -> 7)
   * `--no-backup`           更新前不进行备份
-* `bench restart` 重启所有 bench 服务 
-* `bench backup` 备份 
+* `bench restart` 重启所有 bench 服务
+* `bench backup` 备份
 * `bench backup-all-sites` 备份所有站点
   * `--with-files` 备份站点及其文件
 * `bench restore` 恢复
@@ -58,7 +58,7 @@
 * `bench remove-from-installed-apps [app-name]` 从应用列表中移除应用
 * `bench uninstall-app [app-name]` 删除应用及与该应用相关的一切 (须确保 Bench 在运行)
 * `bench remove-app [app-name]` 从 bench 中彻底删除应用
-* `bench --site [sitename] --force reinstall ` 全新数据库重新安装 (小心：将清除老的数据库) 
+* `bench --site [sitename] --force reinstall ` 全新数据库重新安装 (小心：将清除老的数据库)
 * `bench new-site [sitename]` - 创建一个新的站点
   * `--db-name`                数据库名称
   * `--mariadb-root-username`  MariaDB 数据库 root 用户名
@@ -70,13 +70,13 @@
   * `--install-app`            站点安装后安装应用
 * `bench use [site]` 设置默认站点
 * `bench drop-site` 从磁盘及数据库中完全移除站点
-  * `--root-login` 
+  * `--root-login`
   * `--root-password`
 * `bench set-config [key] [value]`   为站点配置文件增加键值对
 * `bench console`   打开 bench venv 下的 IPython 终端
 * `bench execute`   执行任何应用内的方法
   * 例如 : `bench execute frappe.utils.scheduler.enqueue_scheduler_events`
-* `bench mysql`  打开 SQL 终端 
+* `bench mariadb`  打开 SQL 终端 
 * `bench run-tests`  运行测试
   * `--app` 应用名称
   * `--doctype` 用于测试的 DocType
@@ -91,4 +91,3 @@
 * `bench doctor` - 显示有关后台执行单元的诊断信息
 * `bench show-pending-jobs`- 显示未完成任务
 * `bench purge-jobs` - 销毁所有未完成任务
-
